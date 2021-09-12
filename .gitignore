@@ -62,5 +62,6 @@ target/
 # Notebook Checkpoints
 .ipynb_checkpoints/
 
-# Pickle
-.pkl/
+# Pickles
+*.pkl
+**/*.pkl
