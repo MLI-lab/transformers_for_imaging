@@ -1,41 +1,54 @@
 class ViT:
-    def __init__(self, size):
-        self.marker = 'o-.'    
+    def __init__(self, size, useline=True):
+        if useline:
+            self.marker = 'o-.'
+        else:
+            self.marker = 'o'
         self.color = '#1f77b4'
         
         if size == 's':
             self.ms = 4
             self.oc = 0.95
+            self.hatch = 'x'
             self.label = 'ViT-8M/10'
         
         elif size == 'm':
             self.ms = 10
             self.oc = 0.75
+            self.hatch = '/'
             self.label = 'ViT-32M/10'            
             
         elif size == 'l':
             self.ms = 16
             self.oc = 0.55
+            self.hatch = '.'
             self.label = 'ViT-60M/10'            
 
 class Unet:
-    def __init__(self, size):
-        self.marker = 's-.'       
+    def __init__(self, size, useline=True):
+        if useline:
+            self.marker = 's-.'
+        else:
+            self.marker = 's'
+            
         self.color = '#bca1d1'
         
         if size == 's':
             self.ms = 4
             self.oc = 0.95
+            self.hatch = 'x'
             self.label = 'U-Net-8M'
         
         elif size == 'm':
             self.ms = 10
             self.oc = 0.75
+            self.hatch = '/'
             self.label = 'U-Net-31M'            
             
         elif size == 'l':
             self.ms = 16
             self.oc = 0.55
+            self.hatch = '.'
             self.label = 'U-Net-124M' 
 
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
