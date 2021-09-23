@@ -15,13 +15,13 @@ class ViT:
         elif size == 'm':
             self.ms = 10
             self.oc = 0.75
-            self.hatch = '/'
+            self.hatch = 'x'
             self.label = 'ViT-32M/10'            
             
         elif size == 'l':
             self.ms = 16
             self.oc = 0.55
-            self.hatch = '.'
+            self.hatch = '..'
             self.label = 'ViT-60M/10'            
 
 class Unet:
@@ -42,13 +42,13 @@ class Unet:
         elif size == 'm':
             self.ms = 10
             self.oc = 0.75
-            self.hatch = '/'
+            self.hatch = 'x'
             self.label = 'U-Net-31M'            
             
         elif size == 'l':
             self.ms = 16
             self.oc = 0.55
-            self.hatch = '.'
+            self.hatch = '..'
             self.label = 'U-Net-124M' 
 
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
