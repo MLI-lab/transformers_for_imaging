@@ -15,7 +15,7 @@ hatch.linewidth: 0.4
 ## * FONT                                                                    *
 ## ***************************************************************************
 
-font.size:    14.0
+font.size:    18.0
 font.family:  "serif"
 font.serif: "Computer Modern Roman"
 
@@ -60,7 +60,7 @@ legend.framealpha:    1
 ## ***************************************************************************
 
 figure.edgecolor:   black
-figure.figsize:     6, 4.5
+figure.figsize:     7.2, 4.5
 
 ## ***************************************************************************
 ## * SAVING FIGURES                                                          *
