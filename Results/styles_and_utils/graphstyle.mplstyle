@@ -32,6 +32,8 @@ text.usetex: True
 axes.grid: True
 axes.formatter.useoffset: True  
 axes.formatter.offset_threshold: 4
+axes.titlesize: large
+axes.labelsize: large
 
 ## ***************************************************************************
 ## * TICKS                                                                   *
