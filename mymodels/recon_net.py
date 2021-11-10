@@ -34,10 +34,10 @@ class ReconNet(nn.Module):
         
         return x * std + mean
     
-    def vit_forward(self, x, k=None):         
+    def vit_forward(self, x):
         x, wpad, hpad = self.pad(x)
         x, mean, std = self.norm(x)
-        x = self.net(x, k)
+        x = self.net(x)
         x = self.unnorm(x, mean, std)
         x = self.unpad(x, wpad, hpad)
 
@@ -50,10 +50,10 @@ class ReconNet(nn.Module):
 
         return x    
     
-    def forward(self, x, k=None):
+    def forward(self, x):
         if isinstance(self.net, Unet):
             
             return self.unet_forward(x)
         else:
             
-            return self.vit_forward(x, k)
+            return self.vit_forward(x)

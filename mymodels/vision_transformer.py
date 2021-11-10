@@ -1,16 +1,7 @@
-# Copyright (c) 2015-present, Facebook, Inc.
-# All rights reserved.
-#
-# This source code is licensed under the CC-by-NC license found in the
-# LICENSE file in the root directory of this source tree.
-#
-
-'''These modules are adapted from those of timm, see
-https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
 '''
+Code based on https://github.com/facebookresearch/convit which uses code from timm: https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
 
-'''
-Code based on https://github.com/facebookresearch/convit. With some modifications. Including adaption to image reconsturction, variable input sizes, patch sizes for both dimensions ~Kang
+Modifications include adaptation to image reconsturction, variable input sizes, and patch sizes for both dimensions. 
 '''
 
 import torch
@@ -271,7 +262,7 @@ class VisionTransformer(nn.Module):
     def __init__(self, avrg_img_size=320, patch_size=16, in_chans=1, embed_dim=64, depth=8,
                  num_heads=9, mlp_ratio=4., qkv_bias=False, qk_scale=None, drop_rate=0., attn_drop_rate=0.,
                  drop_path_rate=0., norm_layer=nn.LayerNorm, global_pool=None,
-                 gpsa_interval=(2,7), locality_strength=1., use_pos_embed=True):
+                 gpsa_interval=[-1, -1], locality_strength=1., use_pos_embed=True):
         
         super().__init__()
         self.depth = depth
@@ -357,9 +348,9 @@ class VisionTransformer(nn.Module):
         return self.head
 
     def reset_head(self,):
-        self.head = nn.Linear(self.num_features, in_chans*self.patch_size[0]*self.patch_size[1]) 
+        self.head = nn.Linear(self.num_features, self.in_chans*self.patch_size[0]*self.patch_size[1]) 
 
-    def forward_features(self, x, k=None):
+    def forward_features(self, x):
         x = self.patch_embed(x)
         _, _, H, W = x.shape
         
@@ -372,16 +363,14 @@ class VisionTransformer(nn.Module):
 
         for u, blk in enumerate(self.blocks):
             x = blk(x, (H, W))
-            if k is not None and u == k:
-                self.attention_map = blk.attn.get_attention_map(x, return_map = True)
                 
         x = self.norm(x)  
 
         return x
 
-    def forward(self, x, k=None):
+    def forward(self, x):
         _, _, H, W = x.shape
-        x = self.forward_features(x, k)
+        x = self.forward_features(x)
         x = self.head(x)
         x = self.seq2img(x, (H, W))
         
