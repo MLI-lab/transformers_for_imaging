@@ -10,19 +10,19 @@ class ViT:
             self.ms = 4
             self.oc = 0.95
             self.hatch = 'x'
-            self.label = 'ViT-8M/10'
+            self.label = 'ViT-S'
         
         elif size == 'm':
             self.ms = 10
-            self.oc = 0.75
+            self.oc = 0.85
             self.hatch = 'x'
-            self.label = 'ViT-32M/10'            
+            self.label = 'ViT-M'            
             
         elif size == 'l':
             self.ms = 16
-            self.oc = 0.55
+            self.oc = 0.75
             self.hatch = '..'
-            self.label = 'ViT-60M/10'            
+            self.label = 'ViT-L'            
 
 class Unet:
     def __init__(self, size, useline=True):
@@ -37,19 +37,19 @@ class Unet:
             self.ms = 4
             self.oc = 0.95
             self.hatch = 'x'
-            self.label = 'U-Net-8M'
+            self.label = 'U-Net-S'
         
         elif size == 'm':
             self.ms = 10
-            self.oc = 0.75
+            self.oc = 0.85
             self.hatch = 'x'
-            self.label = 'U-Net-31M'            
+            self.label = 'U-Net-M'            
             
         elif size == 'l':
             self.ms = 16
-            self.oc = 0.55
+            self.oc = 0.75
             self.hatch = '..'
-            self.label = 'U-Net-124M' 
+            self.label = 'U-Net-L' 
 
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
 from mpl_toolkits.axes_grid1.inset_locator import TransformedBbox, BboxPatch, BboxConnector 
