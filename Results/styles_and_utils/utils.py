@@ -37,19 +37,19 @@ class Unet:
             self.ms = 4
             self.oc = 0.95
             self.hatch = 'x'
-            self.label = 'U-Net-S'
+            self.label = 'U-net-S'
         
         elif size == 'm':
             self.ms = 10
             self.oc = 0.85
             self.hatch = 'x'
-            self.label = 'U-Net-M'            
+            self.label = 'U-net-M'            
             
         elif size == 'l':
             self.ms = 16
             self.oc = 0.75
             self.hatch = '..'
-            self.label = 'U-Net-L' 
+            self.label = 'U-net-L' 
 
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
 from mpl_toolkits.axes_grid1.inset_locator import TransformedBbox, BboxPatch, BboxConnector 

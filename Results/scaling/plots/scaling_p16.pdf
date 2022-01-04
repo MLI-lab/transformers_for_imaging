@@ -10,19 +10,21 @@ endobj
 endobj
 11 0 obj
 << /Annots 10 0 R /Contents 9 0 R
-/Group << /CS /DeviceRGB /S /Transparency /Type /Group >>
 /MediaBox [ 0 0 484.0642847136 305.0910136062 ] /Parent 2 0 R
 /Resources 8 0 R /Type /Page >>
 endobj
 9 0 obj
 << /Length 12 0 R >>
 stream
+/DeviceRGB CS
+/DeviceRGB cs
 1 j
 0 j 0 w /DeviceRGB cs
 0 0 m
 484.064285 0 l
 484.064285 305.091014 l
 0 305.091014 l
+0 0 l
 h
 
 n
@@ -364,6 +366,7 @@ B
 /A6 gs 1 j 0.4 w [ 2.56 0.64 0.4 0.64 ] 0 d 0.7882352941 0.1882352941
 0.3803921569 RG /DeviceRGB cs
 336.052512 134.042405 m
+354.052512 134.042405 l
 372.052512 134.042405 l
 
 S
@@ -391,6 +394,7 @@ ET
 /A4 gs 0.4 w [ 2.56 0.64 0.4 0.64 ] 0 d 0.7882352941 0.1882352941
 0.3803921569 RG /DeviceRGB cs
 336.052512 107.140801 m
+354.052512 107.140801 l
 372.052512 107.140801 l
 
 S
@@ -418,6 +422,7 @@ ET
 /A4 gs 0.4 w [ 2.56 0.64 0.4 0.64 ] 0 d 0.1215686275 0.4666666667
 0.7058823529 RG /DeviceRGB cs
 336.052512 80.239197 m
+354.052512 80.239197 l
 372.052512 80.239197 l
 
 S
@@ -447,7 +452,7 @@ Q
 endstream
 endobj
 12 0 obj
-8734
+8839
 endobj
 10 0 obj
 [ ]
@@ -463,9 +468,9 @@ endobj
 endobj
 18 0 obj
 << /Ascent 750 /CapHeight 1000 /Descent -250 /Flags 68
-/FontBBox [ -31 -250 1026 750 ] /FontFamily (CMMI12) /FontFile 19 0 R
-/FontName /CMMI12 /ItalicAngle -14.04 /StemV 50 /Type /FontDescriptor
-/XHeight 500 >>
+/FontBBox [ -31 -250 1026 750 ] /FontFamily (Computer Modern)
+/FontFile 19 0 R /FontName /CMMI12 /ItalicAngle -14.04 /StemV 50
+/Type /FontDescriptor /XHeight 500 >>
 endobj
 19 0 obj
 << /Length 36176 /Length1 4323 /Length2 31853 /Length3 0 >>
@@ -828,9 +833,9 @@ endobj
 endobj
 22 0 obj
 << /Ascent 749 /CapHeight 1000 /Descent -250 /Flags 4
-/FontBBox [ -33 -250 945 749 ] /FontFamily (CMR17) /FontFile 23 0 R
-/FontName /CMR17 /ItalicAngle 0 /StemV 50 /Type /FontDescriptor
-/XHeight 500 >>
+/FontBBox [ -33 -250 945 749 ] /FontFamily (Computer Modern)
+/FontFile 23 0 R /FontName /CMR17 /ItalicAngle 0 /StemV 50
+/Type /FontDescriptor /XHeight 500 >>
 endobj
 23 0 obj
 << /Length 31797 /Length1 4286 /Length2 27511 /Length3 0 >>
@@ -1236,39 +1241,39 @@ endobj
 << /Count 1 /Kids [ 11 0 R ] /Type /Pages >>
 endobj
 24 0 obj
-<< /CreationDate (D:20211110145809+02'00')
-/Creator (Matplotlib v3.4.3, https://matplotlib.org)
-/Producer (Matplotlib pdf backend v3.4.3) >>
+<< /CreationDate (D:20211217000546+02'00')
+/Creator (Matplotlib v3.5.0, https://matplotlib.org)
+/Producer (Matplotlib pdf backend v3.5.0) >>
 endobj
 xref
 0 25
 0000000000 65535 f 
 0000000016 00000 n 
-0000081059 00000 n 
-0000079174 00000 n 
-0000079217 00000 n 
-0000079532 00000 n 
-0000079553 00000 n 
-0000079574 00000 n 
+0000081125 00000 n 
+0000079240 00000 n 
+0000079283 00000 n 
+0000079598 00000 n 
+0000079619 00000 n 
+0000079640 00000 n 
 0000000065 00000 n 
-0000000410 00000 n 
-0000009219 00000 n 
+0000000352 00000 n 
+0000009266 00000 n 
 0000000208 00000 n 
-0000009198 00000 n 
-0000079628 00000 n 
-0000080101 00000 n 
-0000080574 00000 n 
-0000009239 00000 n 
-0000046268 00000 n 
-0000009771 00000 n 
-0000009998 00000 n 
-0000046401 00000 n 
-0000079042 00000 n 
-0000046933 00000 n 
-0000047151 00000 n 
-0000081119 00000 n 
+0000009245 00000 n 
+0000079694 00000 n 
+0000080167 00000 n 
+0000080640 00000 n 
+0000009286 00000 n 
+0000046324 00000 n 
+0000009818 00000 n 
+0000010054 00000 n 
+0000046457 00000 n 
+0000079108 00000 n 
+0000046989 00000 n 
+0000047217 00000 n 
+0000081185 00000 n 
 trailer
 << /Info 24 0 R /Root 1 0 R /Size 25 >>
 startxref
-81276
+81342
 %%EOF

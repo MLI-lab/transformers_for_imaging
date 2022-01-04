@@ -1,7 +1,7 @@
 '''
-Code based on https://github.com/facebookresearch/convit which uses code from timm: https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
+Code borrowed from https://github.com/facebookresearch/convit which uses code from timm: https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py
 
-Modifications include adaptation to image reconsturction, variable input sizes, and patch sizes for both dimensions. 
+Modifications include adaptation to image reconstruction, variable input sizes, and patch sizes for both dimensions. 
 '''
 
 import torch
@@ -259,7 +259,7 @@ class PatchEmbed(nn.Module):
 class VisionTransformer(nn.Module):
     """ Vision Transformer
     """
-    def __init__(self, avrg_img_size=320, patch_size=16, in_chans=1, embed_dim=64, depth=8,
+    def __init__(self, avrg_img_size=320, patch_size=10, in_chans=1, embed_dim=64, depth=8,
                  num_heads=9, mlp_ratio=4., qkv_bias=False, qk_scale=None, drop_rate=0., attn_drop_rate=0.,
                  drop_path_rate=0., norm_layer=nn.LayerNorm, global_pool=None,
                  gpsa_interval=[-1, -1], locality_strength=1., use_pos_embed=True):
