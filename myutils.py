@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import numpy as np
-from prettytable import PrettyTable
+# from prettytable import PrettyTable
 
 def divide_img(img, patch_size):
     """Divides image into tensor of image patches
@@ -159,15 +159,15 @@ class L1Loss(nn.Module):
         return (err/data_range).mean()
     
     
-def count_parameters(model):
-    """"Model parameters count"""
-    table = PrettyTable(["Modules", "Parameters"])
-    total_params = 0
-    for name, parameter in model.named_parameters():
-        if not parameter.requires_grad: continue
-        param = parameter.numel()
-        table.add_row([name, param])
-        total_params+=param
-    print(table)
-    print("Total Trainable Params: {total_params}")
-    return total_params
+# def count_parameters(model):
+#     """"Model parameters count"""
+#     table = PrettyTable(["Modules", "Parameters"])
+#     total_params = 0
+#     for name, parameter in model.named_parameters():
+#         if not parameter.requires_grad: continue
+#         param = parameter.numel()
+#         table.add_row([name, param])
+#         total_params+=param
+#     print(table)
+#     print("Total Trainable Params: {total_params}")
+#     return total_params
