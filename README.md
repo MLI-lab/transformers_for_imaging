@@ -32,7 +32,14 @@ You may adjust the hyperparamters according to the descriptions in our paper. Al
 In our experiments we also used a simulated single-coil brain dataset, which has been simulated in the same fashion as fastMRI's single-coil knee dataset. The code to reproduce this dataset is given in `simulate_singlecoil_from_multicoil.ipynb`.
 
 ## Citation
-
+```
+@article{linVisionTransformersEnable2021,
+  title = {Vision Transformers Enable Fast and Robust Accelerated MRI},
+  author = {Lin, Kang and Heckel, Reinhard},
+  year = {2021},
+  langid = {english}
+}
+```
 ## License
 This repository is [Apache 2.0](https://github.com/MLI-lab/transformers_for_imaging/blob/master/LICENSE) licensed.
 
