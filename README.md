@@ -1,7 +1,7 @@
 # Vision Transformers Enable Fast and Robust Accelerated MRI
 This repository provides code for reproducing the results of our paper [Vision Transformers Enable Fast and Robust Accelerated MRI](https://openreview.net/forum?id=cNX6LASbv6).
 
-Our code has been tested for the environment given in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/fastMRI), and [timm](https://github.com/rwightman/pytorch-image-models).
+Our code has been tested for the environment given in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/convit), and [timm](https://github.com/rwightman/pytorch-image-models).
 
 ## Datasets
 Our experiments are performed using the [fastMRI](https://fastmri.org/dataset) and the [ImageNet](https://www.image-net.org/index.php) dataset.
