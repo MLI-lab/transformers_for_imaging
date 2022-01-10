@@ -34,5 +34,5 @@ In our experiments we also used a simulated single-coil brain dataset, which has
 ## Citation
 
 ## License
-This repository is [MIT](https://github.com/MLI-lab/transformers_for_imaging/blob/master/LICENSE) licensed.
+This repository is [Apache 2.0](https://github.com/MLI-lab/transformers_for_imaging/blob/master/LICENSE) licensed.
 
