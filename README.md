@@ -1,5 +1,5 @@
 # Vision Transformers Enable Fast and Robust Accelerated MRI
-This repository provides code for reproducing the results of our paper [Vision Transformers Enable Fast and Robust Accelerated MRI](https://openreview.net/forum?id=cNX6LASbv6).
+This repository provides code for reproducing the results of our paper: [Vision Transformers Enable Fast and Robust Accelerated MRI](https://openreview.net/forum?id=cNX6LASbv6).
 
 Our code has been tested for the environment given in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/convit), and [timm](https://github.com/rwightman/pytorch-image-models).
 
@@ -22,9 +22,9 @@ pip install timm
 to obtain the dependencies.
 
 ## Usage
-The code to reproduce our paper results are provided as Jupyter notebooks `training.ipynb` and `imagenet_pretrain.ipynb`. 
+The code to reproduce our paper results are provided as Jupyter notebooks `fastmri_training.ipynb` and `imagenet_pretrain.ipynb`. 
 
-The notebook `training.ipynb` handles model training, fine-tuning and evaluation on the fastMRI dataset.
+The notebook `fastmri_training.ipynb` handles model training, fine-tuning and evaluation on the fastMRI dataset.
 The notebook `imagenet_pretrain.ipynb` provides the code for pre-training our models on the ImageNet dataset. 
 
 You may adjust the hyperparamters according to the descriptions in our paper. Also note that in both notebooks the data directory path has to be clarified at the marked places.
