@@ -1,10 +1,10 @@
 # Vision Transformers Enable Fast and Robust Accelerated MRI
-This repository provides code for reproducing the results of our paper: [Vision Transformers Enable Fast and Robust Accelerated MRI](https://openreview.net/forum?id=cNX6LASbv6).
+This repository provides code for reproducing the results of the paper: [Vision Transformers Enable Fast and Robust Accelerated MRI](https://openreview.net/forum?id=cNX6LASbv6), by Kang Lin and Reinhard Heckel.
 
-Our code has been tested for the environment given in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/convit), and [timm](https://github.com/rwightman/pytorch-image-models).
+The code has been tested for the environment given in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/convit), and [timm](https://github.com/rwightman/pytorch-image-models).
 
 ## Datasets
-Our experiments are performed using the [fastMRI](https://fastmri.org/dataset) and the [ImageNet](https://www.image-net.org/index.php) dataset.
+The experiments from paper were performed using the [fastMRI](https://fastmri.org/dataset) and the [ImageNet](https://www.image-net.org/index.php) dataset.
 
 ## Installation
 First, install PyTorch for your operating system and CUDA setup from the
@@ -22,14 +22,14 @@ pip install timm
 to obtain the dependencies.
 
 ## Usage
-The code to reproduce our paper results are provided as Jupyter notebooks `fastmri_training.ipynb` and `imagenet_pretrain.ipynb`. 
+The code to reproduce our paper results are provided as Jupyter notebooks: `fastmri_training.ipynb` and `imagenet_pretrain.ipynb`. 
 
 The notebook `fastmri_training.ipynb` handles model training, fine-tuning and evaluation on the fastMRI dataset.
 The notebook `imagenet_pretrain.ipynb` provides the code for pre-training our models on the ImageNet dataset. 
 
-You may adjust the hyperparamters according to the descriptions in our paper. Also note that in both notebooks the data directory path has to be clarified at the marked places.
+You may adjust the hyperparamters according to the descriptions in the paper. Also note that in both notebooks the data directory path has to be clarified at the marked places.
 
-In our experiments we also used a simulated single-coil brain dataset, which has been simulated in the same fashion as fastMRI's single-coil knee dataset. The code to reproduce this dataset is given in `simulate_singlecoil_from_multicoil.ipynb`.
+In the experiments, we also used a simulated single-coil brain dataset, which has been simulated in the same fashion as fastMRI's single-coil knee dataset. The code to reproduce this dataset is provided in `simulate_singlecoil_from_multicoil.ipynb`.
 
 ## Citation
 ```
