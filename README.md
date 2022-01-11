@@ -22,7 +22,7 @@ pip install timm
 to obtain the dependencies.
 
 ## Usage
-The code to reproduce our paper results are provided as Jupyter notebooks: `fastmri_training.ipynb` and `imagenet_pretrain.ipynb`. 
+The code for reproducing the paper results are provided as Jupyter notebooks: `fastmri_training.ipynb` and `imagenet_pretrain.ipynb`. 
 
 The notebook `fastmri_training.ipynb` handles model training, fine-tuning and evaluation on the fastMRI dataset.
 The notebook `imagenet_pretrain.ipynb` provides the code for pre-training our models on the ImageNet dataset. 
