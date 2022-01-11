@@ -1,20 +1,20 @@
 # Vision Transformers Enable Fast and Robust Accelerated MRI
 This repository provides code for reproducing the results of the paper: [Vision Transformers Enable Fast and Robust Accelerated MRI](https://openreview.net/forum?id=cNX6LASbv6), by Kang Lin and Reinhard Heckel.
 
-The code has been tested for the environment given in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/convit), and [timm](https://github.com/rwightman/pytorch-image-models).
+The code has been tested for the environment in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/convit), and [timm](https://github.com/rwightman/pytorch-image-models).
 
 ## Datasets
-The experiments from paper were performed using the [fastMRI](https://fastmri.org/dataset) and the [ImageNet](https://www.image-net.org/index.php) dataset.
+The experiments from the paper were performed using the [fastMRI](https://fastmri.org/dataset) and the [ImageNet](https://www.image-net.org/index.php) dataset.
 
 ## Installation
 First, install PyTorch for your operating system and CUDA setup from the
 [PyTorch website](https://pytorch.org/get-started/).  
 
-Then, install all other dependencies from `requirements.txt`. This can be done, for example, by downloading `requirements.txt`, and running
+Then, install all other dependencies from `requirements.txt`. This can be done, for example, by running
 ```
 pip install -r requirements.txt
 ```
-in the directory where you saved `requirements.txt`. Alternatively, you may run
+from the directory where you saved `requirements.txt`. Alternatively, you may run
 ```
 pip install fastmri
 pip install timm
