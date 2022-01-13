@@ -4,7 +4,7 @@ This repository provides code for reproducing the results of the paper: [Vision 
 The code has been tested for the environment in `requirements.txt`, and builds on the code from [fastMRI](https://github.com/facebookresearch/fastMRI), [ConViT](https://github.com/facebookresearch/convit), and [timm](https://github.com/rwightman/pytorch-image-models).
 
 ## Datasets
-The experiments from the paper were performed using the [fastMRI](https://fastmri.org/dataset) and the [ImageNet](https://www.image-net.org/index.php) dataset.
+The experiments from the paper were performed using the [fastMRI dataset](https://fastmri.org/dataset) and the [ImageNet dataset](https://www.image-net.org/index.php).
 
 ## Installation
 First, install PyTorch for your operating system and CUDA setup from the
@@ -27,17 +27,16 @@ The code for reproducing the paper results are provided as Jupyter notebooks: `f
 The notebook `fastmri_training.ipynb` handles model training, fine-tuning and evaluation on the fastMRI dataset.
 The notebook `imagenet_pretrain.ipynb` provides the code for pre-training our models on the ImageNet dataset. 
 
-You may adjust the hyperparamters according to the descriptions in the paper. Also note that in both notebooks the data directory path has to be clarified at the marked places.
+You may adjust the hyperparamters according to the descriptions in the paper. Also note that in both notebooks the data directory path has to be specified at the marked places.
 
 In the experiments, we also used a simulated single-coil brain dataset, which has been simulated in the same fashion as fastMRI's single-coil knee dataset. The code to reproduce this dataset is provided in `simulate_singlecoil_from_multicoil.ipynb`.
 
 ## Citation
 ```
-@article{linVisionTransformersEnable2021,
-  title = {Vision Transformers Enable Fast and Robust Accelerated MRI},
-  author = {Lin, Kang and Heckel, Reinhard},
-  year = {2021},
-  langid = {english}
+@article{lin2021vision,
+  title={Vision Transformers Enable Fast and Robust Accelerated MRI},
+  author={Lin, Kang and Heckel, Reinhard},
+  year={2021}
 }
 ```
 ## License
