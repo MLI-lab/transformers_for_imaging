@@ -33,10 +33,13 @@ In the experiments, we also used a simulated single-coil brain dataset, which ha
 
 ## Citation
 ```
-@article{lin2021vision,
-  title={Vision Transformers Enable Fast and Robust Accelerated MRI},
-  author={Lin, Kang and Heckel, Reinhard},
-  year={2021}
+@inproceedings{
+lin2022vision,
+title={Vision Transformers Enable Fast and Robust Accelerated {MRI}},
+author={Kang Lin and Reinhard Heckel},
+booktitle={Medical Imaging with Deep Learning},
+year={2022},
+url={https://openreview.net/forum?id=cNX6LASbv6}
 }
 ```
 ## License
